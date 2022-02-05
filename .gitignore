@@ -1,0 +1,26 @@
+# pytest
+.pytest_cache
+.cache
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+.eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+lib
+lib64
+pip-wheel-metadata
+
+# Visual Studio Code
+.vscode/*
+
+# Built docs
+docs/build

@@ -1,0 +1,10 @@
+FROM python:3.10
+
+# Set the working directory inside the Docker image
+WORKDIR /app
+
+# Copy everything except for files listed in .dockerignore
+COPY . /app
+
+# Install the app
+RUN pip install -e .
