@@ -52,12 +52,18 @@ class Game:
         """
         Robot rules for choosing actions.
 
-        params:
-        robot : a Robot
-        foo_lock : async lock for foo materials
-        bar_lock : async lock for bar materials
-        foobar_lock : async lock for foobar materials
-        money_lock : async lock for money materials
+        Parameters
+        ----------
+        robot : Type[Robot]
+            a Robot
+        foo_lock : asyncio.Lock,
+            async lock for foo materials
+        bar_lock : asyncio.Lock,
+            async lock for bar materials
+        foobar_lock : asyncio.Lock,
+            async lock for foobar materials
+        money_lock : asyncio.Lock,
+            async lock for money materials
         """
         while len(self.robots) < 30:
             if self.money >= 3 and self.foo >= 6:

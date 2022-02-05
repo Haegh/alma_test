@@ -30,7 +30,11 @@ class Robot:
     async def mine_foo(self) -> int:
         """
         Method for foo mining.
-        return : number of foo mined
+        
+        Returns
+        -------
+        int
+            number of foo mined
         """
         logging.info(f"Robot {self.id} mine a foo.")
         await self.__await_new_status(self.status, "mine_foo")
@@ -41,7 +45,11 @@ class Robot:
     async def mine_bar(self) -> int:
         """
         Method for bar mining.
-        return : number of bar mined
+        
+        Returns
+        -------
+        int
+            number of bar mined
         """
         logging.info(f"Robot {self.id} mine a bar.")
         await self.__await_new_status(self.status, "mine_bar")
@@ -52,10 +60,18 @@ class Robot:
     async def assemble_foobar(self, foo: int, bar: int) -> tuple[int, int, int]:
         """
         Method for assembling a foobar from foo an bar materials.
-        params:
-        foo : number of foo materials
-        bar : number of bar materials
-        return : tuple of number of foo used, number of bar used and number of foobar created
+
+        Parameters
+        ----------
+        foo : int
+            number of foo materials
+        bar : int
+            number of bar materials
+        
+        Returns
+        -------
+        tuple[int, int, int]
+            tuple of number of foo used, number of bar used and number of foobar created
         """
         logging.info(f"Robot {self.id} assemble a foobar.")
         if foo < 1 or bar < 1:
@@ -75,9 +91,16 @@ class Robot:
     async def sell_foobar(self, foobar: int) -> tuple[int, int]:
         """
         Method for selling foobars materials.
-        params:
-        foobar_num : number of foobar materials
-        return : tuple of number of foobar sold and money obtained
+
+        Parameters
+        ----------
+        foobar_num : int
+            number of foobar materials
+        
+        Returns
+        -------
+        tuple[int, int]
+            tuple of number of foobar sold and money obtained
         """
         logging.info(f"Robot {self.id} sell a foobar.")
         if foobar < 1 or foobar > 5:
@@ -91,10 +114,18 @@ class Robot:
     async def buy_robot(self, foo: int, money: int) -> tuple[int, int, Type[Robot]]:
         """
         Method for buying robots.
-        params:
-        foo : number of foo materials
-        money : number of money materials
-        return : tuple of number of foo sold, money used and the robot bought
+
+        Parameters
+        ----------
+        foo : int
+            number of foo materials
+        money : int
+            number of money materials
+        
+        Returns
+        -------
+        tuple[int, int, Type[Robot]]
+            tuple of number of foo sold, money used and the robot bought
         """
         logging.info(f"Robot {self.id} buy a robot.")
         if money < 3 or foo < 6:

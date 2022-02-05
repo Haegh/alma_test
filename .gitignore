@@ -32,4 +32,4 @@ pip-delete-this-directory.txt
 .vscode/*
 
 # Built docs
-docs/build
+docs/_build
