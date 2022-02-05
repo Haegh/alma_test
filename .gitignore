@@ -1,23 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
 # pytest
 .pytest_cache
 .cache
 
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-.eggs
-parts
-bin
-var
-sdist
-develop-eggs
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
 .installed.cfg
-lib
-lib64
-pip-wheel-metadata
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Visual Studio Code
 .vscode/*
