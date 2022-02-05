@@ -1,1 +1,1 @@
-FROM gitpod/workspace-python
+FROM gitpod/workspace-base:latest
