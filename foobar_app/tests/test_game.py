@@ -44,6 +44,7 @@ async def test_robot_logic(game):
     money_lock = asyncio.Lock()
     game.foo = 6
     game.money = 3
+    # There is already 2 robots 27 + 2 = 29
     for _ in range(27):
         game.robots.append(Robot())
     await game._Game__robot_logic(
