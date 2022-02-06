@@ -39,7 +39,7 @@ class Game:
             )
             tasks.append(task)
         await asyncio.gather(*tasks)
-        print("Congratulation ! You have 30 robots !")
+        print("Congratulations ! You have 30 robots !")
 
     async def __robot_logic(
         self,
